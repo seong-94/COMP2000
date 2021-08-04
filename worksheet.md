@@ -30,6 +30,7 @@ Modify the application so that instead it prints
 Red vs. Blue
 ~~~~~
 
+
 # Task 3
 
 Draw a 20 by 20 grid on a 720x720 window.  Each cell in the grid should be 35 pixels high and wide and the grid should be drawn 10 pixels off the top and left borders of the screen.  To do this, you should use the `Graphics` class from the Java libraries.  Be sure to consult the tips video for this task (it is a link in iLearn).  Without it, you will be very confused.
@@ -45,3 +46,4 @@ Modify the program to make these things happen.  Make a `Grid` class and a `Cell
 # Task 5
 
 Anything that is a `JFrame` or `JPanel` can find out the position of the mouse using `getMousePosition`.  Modify your program so that mousing over a cell will "highlight" it.  Highlighted cells should be drawn in grey.  You may have to think about how you will get the mouse position from the place you can read it, to the place it is needed (the `paint` method of a `Cell` object).
+
