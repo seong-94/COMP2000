@@ -14,10 +14,10 @@ public class Grid {
     }
 
     // method
-    public void paint(Graphics g) {
+    public void paint(Graphics g,Point mousePos) {
         for (int i = 0; i < cells.length; i++) { // this is for x,y position
             for (int j = 0; j < cells[i].length; j ++) {
-                cells[i][j].paint(g);
+                cells[i][j].paint(g, mousePos);
             }
         }
     }
