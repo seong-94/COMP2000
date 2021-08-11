@@ -21,5 +21,8 @@ public class Grid {
             }
         }
     }
+    public Cell cellAtLocation(int a, int b){
+        return cells[a][b];
+    }
 
 } 

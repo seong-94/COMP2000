@@ -1,15 +1,13 @@
 import java.awt.*;
 
-public class Cell {
+public class Cell extends Rectangle { // rect has own field x,y 
     // fields
-    int x;
-    int y;
     static int size = 35;
 
     // condstructor
     public Cell(int x, int y) { // x,y where this cell is
-        this.x = x;
-        this.y = y;
+        super(x,y,size,size);
+
     }
 
     // methods
@@ -25,9 +23,11 @@ public class Cell {
 
     }
 
-    boolean contains(Point pos) {
+
+    // do not need in rect becasue rect already have contain Point boolean
+    public boolean contains(Point pos) {
         if (pos != null) {
-            return (x < pos.x && x + size > pos.x && y < pos.y && y + size > pos.y);
+            return super.contains(pos);
         } else {
             return false;
         }
